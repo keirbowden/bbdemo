@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-var-p-around_small">
+        <lightning-card title="Alerter">
+            <div class="slds-var-p-around_small">
+                <div>Theme</div>
+                <lightning-combobox class="slds-var-p-bottom_small" variant="label-hidden" label="Theme" value={theme} options={themes}  onchange={themeChanged}></lightning-combobox>
+
+                <div>Variant</div>
+                <lightning-combobox class="slds-var-p-bottom_small" variant="label-hidden" label="Variant" value={variant} options={variants}  onchange={variantChanged}></lightning-combobox>
+
+                <lightning-button onclick={showAlert} label="Alert me!" variant="brand">
+                </lightning-button>
+            </div>
+        </lightning-card>
+    </div>
+
+</template>

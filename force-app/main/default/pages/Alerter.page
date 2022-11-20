@@ -1,0 +1,12 @@
+<apex:page applyHtmlTag="false" applyBodyTag="false" showHeader="false" showQuickActionVfHeader="false" sidebar="false" lightningStylesheets="true" title="Alerter">    <apex:includeLightning />
+    <div style="width:20em;" id="lightning">
+    </div>
+    <script>
+      $Lightning.use('c:AlerterApp', function () {
+        $Lightning.createComponent('c:alerter',
+          {},
+          'lightning',
+          function () { })
+      });            
+    </script>
+</apex:page>
